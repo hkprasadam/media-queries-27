@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cd{
+            width: 205px;
+        }
+        img{
+            height: 300px;
+            width: 200px;
+        }
+       /* @media screen and (min-width:0px) and (max-width:425px) {
+            .img2,.img3{
+                display: none;
+            }
+        }
+        @media screen and (min-width:426px) and (max-width:748px) {
+            .img1,.img2{
+                display:none
+            }
+        }
+        @media screen and (min-width:749px) {
+            .img1,.img3{
+                display: none;
+            }*/
+
+        @media screen and (orientation:landscape) {
+            body{
+                background-color: black;
+            }
+            .div1{
+                border: 3px solid orange;
+                background-color: aquamarine;
+            }
+        }
+        @media screen and (orientation:portrait) {
+            body{
+                background-color: brown;
+            }
+            .div1{
+                border: 3px solid black;
+                background-color: orange;
+            }
+        }
+        .div1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .p{
+            background-color: azure;
+        }
+        @media screen and (min-width:0px) and (max-width:420px) {
+            .div1{
+                justify-content: center;
+            }
+        }
+        .div1 div{
+            border: 2px solid;
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="cd">
+            <div>
+                <img class="img1" src="https://m.media-amazon.com/images/I/710cyWZ1oSL._AC_UF1000,1000_QL80_.jpg" alt="">
+            </div>
+            <div style="height: 50px;overflow-y: scroll;background-color: white;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi accusantium, ut sit neque autem nulla, dignissimos explicabo, sunt non ea asperiores quaerat voluptate ullam laboriosam. Quisquam eius debitis odit quasi.</p>
+            </div>
+            <div class="p">
+                <p>Srikrishna</p>
+            </div>
+            
+        </div>
+        <div class="cd">
+            <div>
+                <img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgWPWrfhuhk7UMx4J5CG2giB8U-l1DqnE2zA&s" alt="">
+            </div>
+            <div style="height: 50px;overflow-y: scroll;background-color: white;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo veritatis dignissimos iste sequi, odit culpa harum suscipit aperiam necessitatibus eaque dolorum non sint quibusdam inventore nemo itaque quaerat. Magni, eligendi.</p>
+            </div>
+            <div class="p">
+                <p>BalaKrishna</p>
+            </div>
+        </div>
+        <div class="cd">
+            <div>
+                <img class="img3" src="https://nadiastrologyvaitheeswarankoil.com/wp-content/uploads/2023/02/Lord-Krishna-and-his-108-names-with-meanings-781x441-1.jpg" alt="">
+            </div>
+            <div style="height: 50px;overflow-y: scroll;background-color: white;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, quasi quod id accusantium excepturi odit. Hic, culpa fugiat, quis totam error debitis harum, odit repellat laudantium cum tempore iure?</p>
+            </div>
+            <div class="p">
+                <p>Govindha</p>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
